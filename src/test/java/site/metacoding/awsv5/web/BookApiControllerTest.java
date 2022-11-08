@@ -107,7 +107,7 @@ public class BookApiControllerTest {
         String author = dc.read("$.author");
 
         assertEquals(HttpStatus.CREATED, response.getStatusCode());
-        assertEquals(3L, id);
+        assertEquals(1L, id);
         assertEquals("제목3", title);
         assertEquals("내용3", content);
         assertEquals("메타코딩", author);
